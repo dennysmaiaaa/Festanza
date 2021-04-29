@@ -12,14 +12,14 @@
 
 
 <body>
-    <!--------------------------------------Primero conteudo----------------------------------------------------->
     <div class="container">
+        <!--------------------------------------Primero conteudo----------------------------------------------------->
         <div class="conteudo conteudo-1">
             <div class="coluna-1">
                 <h2 class="title titulo-1">bem vindo!</h2>
                 <p class="descricao descricao-1">Para se manter conectado</p>
                 <p class="descricao descricao-1">por favor insira suas informações</p>
-                <button class="btn btn-1">Conectar</button>
+                <button id="logar" class="btn btn-1">Conectar</button>
             </div>
             <!--final conteudo 1-->
             <div class="coluna-2">
@@ -50,7 +50,7 @@
                         <input type="email" placeholder="Email">
                     </label>
                     <label class="label-input" for="">
-                        <i class="fab fa-apple"></i>
+                        <i class="fas fa-lock icone"></i>
                         <input type="password" placeholder="Senha">
                     </label>
                     <button class="btn btn-2">Criar</button>
@@ -60,24 +60,21 @@
             <!--fim segunda coluna-->
         </div>
         <!--fim conteudo 1-->
+
         <!--------------------------------------Segundo conteudo----------------------------------------------------->
         <div class="conteudo conteudo-2">
             <div class="coluna-1">
                 <h2 class="title titulo-1">Olá amigo!</h2>
                 <p class="descricao descricao-1">Insira seus dados</p>
                 <p class="descricao descricao-1">e comece a jornada conosco</p>
-                <button class="btn btn-1">criar conta</button>
+                <button id="criar" class="btn btn-1">criar conta</button>
             </div>
             <!--final conteudo 1-->
             <div class="coluna-2">
                 <h2 class="title titulo-2">Entrar</h2>
-                <div class="form">
+                <div class="midia-social">
                     <ul class="lista-social">
                         <a class="link-social-media" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
                             <li class="item-social-media"><i class="fab fa-facebook-f"></i></li>
                         </a>
                         <a class="link-social-media" href="#">
@@ -100,7 +97,7 @@
                         <input type="password" placeholder="Senha">
                     </label>
                     <a class="password" href="#">Esqueceu sua senha?</a>
-                    <button class="btn btn-2">Conectar</button>
+                    <button id="teste" class="btn btn-2">Conectar</button>
                 </form>
                 <!--fim do formulario-->
             </div>
@@ -108,9 +105,8 @@
         </div>
         <!--final conteudo 2-->
         <!------------------------------------------------------------------------------------------->
-    </div>
-
-
+    </div><!--final do container-->
+    <script src="js/app.js"></script>
 </body>
 
 </html>

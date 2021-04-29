@@ -6,7 +6,6 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(#141e30, #243b55);
 }
 
 .container{
@@ -14,10 +13,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ecf0f1;
+    background-color: #5f6364;
 }
 .conteudo{
-    background-color: #fff;
+    background-color: #050801;
     border-radius: 15px;
     width: 960px;
     height: 60%;
@@ -28,20 +27,11 @@ body{
 .conteudo::before{
     content: "";
     position: absolute;
-    background-color: #58af9b;
+    background-color: #9930da;
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
-
-    left: 60%;
-}
-.conteudo-1{
-    display: flex;
-    display: none;
-    
-     
 }
 .title{
     font-size: 28px;
@@ -52,7 +42,7 @@ body{
     color: #fff;
 }
 .titulo-2{
-    color:#58af9b ;
+    color:#9930da ;
 }
 .descricao{
     font-size: 14px;
@@ -63,7 +53,7 @@ body{
     color: #fff;
 }
 .descricao-2{
-    color: #7f8c8d;
+    color: #00edff;
 }
 .btn{
     border-radius: 15px;
@@ -78,111 +68,6 @@ body{
     border: none;
     margin-top: 1rem;
 }
-
-  
-  
-  
-.link-social-media {    
-    color: #03e9f4;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
-  }
-  
-  .link-social-media:hover {
-    background: #50f6ff;
-    color: #fff;
-    border-radius: 50px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
-  }
-  
-  .item-social-media a {
-    position: absolute;
-    display: block;
-  }
-  
-  .item-social-midia span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: btn-anim1 1s linear infinite;
-  }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-    50%,100% {
-      left: 100%;
-    }
-  }
-  
-  .item-social-midia span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-  }
-  
-  @keyframes btn-anim2 {
-    0% {
-      top: -100%;
-    }
-    50%,100% {
-      top: 100%;
-    }
-  }
-  
-  .item-social-midia span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-  }
-  
-  @keyframes btn-anim3 {
-    0% {
-      right: -100%;
-    }
-    50%,100% {
-      right: 100%;
-    }
-  }
-  
-  .item-social-midia span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
-  }
-  
-  @keyframes btn-anim4 {
-    0% {
-      bottom: -100%;
-    }
-    50%,100% {
-      bottom: 100%;
-    }
-  }
-
-
 .btn-1{
     background: transparent;
     border: 1px solid #fff;
@@ -190,20 +75,25 @@ body{
     padding: 10px;
 }
 .btn-2{
-    background-color: #58af9b;
-    border: 1px solid #58af9b;
+    background-color: #9930da;
+    border: 1px solid #9930da;
     transition: background-color .5s;
-    margin-top: 5px;
-    
+    margin-top: 5px;    
 }
 .btn-1:hover{
     background-color: #fff;
-    color: #58af9b;
+    color: #9930da;
 }
 .btn-2:hover{
     background-color: #fff;
-    border: 1px solid #58af9b;
-    color: #58af9b;
+    border: 1px solid #9930da;
+    color: #9930da;
+}
+.conteudo-1{
+    display: flex;     
+}
+.conteudo-1 .coluna-2{
+ z-index: 11;   
 }
 .coluna-1{  
     text-align: center;
@@ -216,8 +106,19 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.form{
-    margin: 5px;
+.midia-social{
+    margin: 1rem 0;
+}
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+.link-social-media .item-social-media{
+    transition: background-color .5s;
+}
+.link-social-media:hover .item-social-media{
+    background-color: #9930da;
+    color: #fff;
+    border-color: #9930da;
 }
 .lista-social{
     display: flex;
@@ -232,25 +133,23 @@ body{
     text-align: center;
     color: #95a5a6;
 }
-.link-social-media:not(:first-child){
-    margin-left: 10px;
-}
-.link-social-media:hover .item-social-media{
-    background-color: #03e9f4;
-    color: #fff;
-    border-color: #30eef8;
-}
 .form{
     display: flex;
     flex-direction: column;
     width: 55%;
+    align-items: center;
 }
-form input{
+.form input{
     height: 45px;
     width: 100%;
     border: none;
     background-color: #ecf0f1;
     width: 100%;
+}
+input:-webkit-autofill 
+{    
+    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color: #000 !important;
 }
 .label-input{
     background-color: #ecf0f1;
@@ -268,18 +167,362 @@ form input{
 }
 .conteudo-2 .coluna-1{
     order: 2;
-    
+    z-index: -1;
 }
 .conteudo-2 .coluna-2{
     order: 1;
+    z-index: -1;
     
 }
 .password{
-    color: #34495e;
+    color: #00edff;
     font-size: 14px;
     margin: 15px 0;
     text-align: center;
 }
 .password::first-letter{
     text-transform: capitalize;
+}
+
+/*brilho do botão*/
+.link-social-media {    
+    color: #9930da;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}  
+.link-social-media:hover {
+    background: #9930da;
+    color: #9930da;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #9930da,
+                0 0 25px #9930da,
+                0 0 50px #9930da,
+                0 0 100px #9930da;
+}  
+.item-social-media a {
+    position: absolute;
+    display: block;
+}
+
+/*transições*/
+.logar-js .conteudo-1 .coluna-1{
+    z-index: -1;
+}
+.logar-js .conteudo-2 .coluna-2{
+    z-index: 11;
+}
+
+.logar-js .conteudo-2 .coluna-1{
+    z-index: 13;
+}
+.logar-js .conteudo::before{
+    left: 60%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    animation: slidein 1.3s;
+
+    z-index: 12;
+}
+
+.criar-js .conteudo::before{
+    animation: slideout 1.3s;
+    z-index: 12;
+}
+.criar-js .conteudo-2 .coluna-1
+.criar-js .conteudo-2 .coluna-2{
+    z-index: -1;
+}
+.criar-js .conteudo-1 .coluna-2{
+    z-index: 11;
+}
+.criar-js .conteudo-1 .coluna-1{
+    z-index: 13;
+}
+
+.logar-js .conteudo-1 .coluna-2 {
+
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+.criar-js .conteudo-2 .coluna-2 {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+@keyframes deslocamentoEsq {
+
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+        opacity: .5;
+        /* z-index: 12; NÃO HÁ NECESSIDADE */
+    }
+
+    50% {
+        left: -100px;
+        opacity: .2;
+        /* z-index: 12; NÃO HÁ NECESSIDADE */
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+@keyframes deslocamentoDir {
+
+    from {
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+    }
+
+    50% {
+        left: 100px;
+        /* z-index: 12; NÃO HÁ NECESSIDADE*/
+        /* background-color: yellow;  Exemplo que dei no vídeo*/
+    }
+
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+
+/*ANIMAÇÃO CSS*/
+
+@keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+}
+
+/*VERSÃO MOBILE*/
+@media screen and (max-width: 1040px) {
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content::before {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+    }
+    .first-content, .second-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .first-column, .second-column {
+        width: 100%;
+    }
+    
+    .sign-in-js .content::before {
+        top: 60%;
+        left: 0;
+        border-radius: 0;
+
+    }
+
+    .form {
+        width: 90%;
+    }
+    
+    /* ANIMAÇÃO MOBILE CSS*/
+
+    @keyframes deslocamentoEsq {
+
+        from {
+            top: 0;
+            opacity: 1;
+            z-index: 12;
+        }
+    
+        25% {
+            top: -80px;
+            opacity: .5;
+            /* z-index: 12; NÃO HÁ NECESSIDADE */
+        }
+    
+        50% {
+            top: -100px;
+            opacity: .2;
+            /* z-index: 12; NÃO HÁ NECESSIDADE */
+        }
+    
+        to {
+            top: -110px;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    
+    
+    @keyframes deslocamentoDir {
+    
+        from {
+            top: 0;
+            z-index: 12;
+        }
+    
+        25% {
+            top: 80px;
+            /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+        }
+    
+        50% {
+            top: 100px;
+            /* z-index: 12; NÃO HÁ NECESSIDADE*/
+            /* background-color: yellow;  Exemplo que dei no vídeo*/
+        }
+    
+        to {
+            top: 110px;
+            z-index: -1;
+        }
+    }
+    
+    
+    
+    @keyframes slidein {
+    
+        from {
+            top: 0;
+            height: 40%;
+        }
+    
+        25% {
+            top: 5%;
+            height: 50%;
+        }
+    
+        50% {
+            top: 25%;
+            height: 60%;
+        }
+    
+        75% {
+            top: 45%;
+            height: 50%;
+        }
+    
+        to {
+            top: 60%;
+            height: 40%;
+        }
+    }
+    
+    @keyframes slideout {
+    
+        from {
+            top: 60%;
+            height: 40%;
+        }
+    
+        25% {
+            top: 45%;
+            height: 50%;
+        }
+    
+        50% {
+            top: 25%;
+            height: 60%;
+        }
+    
+        75% {
+            top: 5%;
+            height: 50%;
+        }
+    
+        to {
+            top: 0;
+            height: 40%;
+        }
+    }
+   
+}
+
+@media screen and (max-width: 740px) {
+    .form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form {
+        width: 100%;
+    }
 }
